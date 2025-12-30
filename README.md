@@ -63,14 +63,18 @@ Le projet suit une **architecture Kappa**, dans laquelle une seule chaîne de tr
 Vérification :
 
 ```bash
-- docker --version
-- docker-compose --version
+  - docker --version
+  - docker-compose --version
+```
+---
+
 ### 3.2 Démarrage des Conteneurs
 
-Lancer tous les services avec Docker Compose :
+Lancer l’ensemble des services du pipeline à l’aide de Docker Compose :
 
 ```bash
 docker-compose up -d
+```
 
 - Les services suivants sont démarrés automatiquement :
 
@@ -85,6 +89,8 @@ docker-compose up -d
 - Consommateur Spark
 
 - Interface Streamlit
+
+---
 
 ## 4.Lancement du Pipeline
 ### 4.1 API de Streaming
